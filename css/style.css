@@ -87,9 +87,22 @@ div.profile
     display: flex;
 }
 
-/*.profile-img
+.my-profile
 {
-    height: 70px;
-    width: 100px;
-    margin: auto    ;
-}*/
+    height: 300px;
+    width: 60%;
+    margin: 130px auto 0 auto;
+    background-color: #FFFFFF;
+    border: blue 0.1px solid;
+    border-radius: 7px;
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.4);
+}
+
+.profile-img
+{
+    height: 34%;
+    width: 35%;
+    margin: -52px 32.5% 0 32.5%;
+    border: white 2px solid;
+    border-radius: 50%;
+}
