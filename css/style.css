@@ -77,5 +77,19 @@ div.profile
     width: 50%;
     height: 560px;
     border-right: #A4A6A7 0.1px solid;
-    padding-top: 50px;
+    padding-top: 40px;
 }
+
+.bg-image
+{
+    height: 200px;
+    width: 100%;
+    display: flex;
+}
+
+/*.profile-img
+{
+    height: 70px;
+    width: 100px;
+    margin: auto    ;
+}*/
