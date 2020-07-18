@@ -296,5 +296,43 @@ div.profile
     width: 100%;
 }
 
+.menu
+{
+    float: right;
+    margin-top: -30%;
+}
 
+.menu ul
+{
+    list-style: none;
+    margin: 0;
+    border-top: 7px solid #019BDB;
+}
 
+.menu ul li
+{
+    padding: 18px 12px;
+    position: relative;
+    width: auto;
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #F5F5F5;
+}
+
+.menu ul li a
+{
+    color: #6F7275;
+    padding: 3px;
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fa-home, .fa-user, .fa-briefcase, .fa-phone
+{
+    padding-right: 5px;
+}
+
+.menu ul li a:hover
+{
+    color: #019BDB;
+}
