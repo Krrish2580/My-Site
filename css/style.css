@@ -336,3 +336,97 @@ div.profile
 {
     color: #019BDB;
 }
+
+.sidebar-btn
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 42px;
+    margin: -43.5% 0 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    /*border: 3px solid #fff; */
+    background: #50ADD3;
+    z-index: 2;
+}
+
+.sidebar-btn_burger
+{
+    width: 38px;
+    height: 4px;
+    background: #555555;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.sidebar-btn_burger::before,
+.sidebar-btn_burger::after
+{
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 4px;
+    background: #555555;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.sidebar-btn_burger::before
+{
+    transform: translateY(-12px);
+}
+
+.sidebar-btn_burger::after
+{
+    transform: translateY(12px);
+}
+
+/*ANIMATION*/
+
+.sidebar-btn.open .sidebar-btn_burger
+{
+    transform: translateX(50px);
+    background: transparent;
+    box-shadow: none;
+}
+.sidebar-btn.open .sidebar-btn_burger::before 
+{
+    transform: rotate(45deg) translate(-35px, 35px);
+}
+
+.sidebar-btn.open .sidebar-btn_burger::after
+{
+    transform: rotate(-45deg) translate(-35px, -35px);
+}
+
+#sidebar
+{
+    display: none;
+    animation: slideme .5s; ease;}
+
+.sidebar-hide-show {
+    height: 100vh;
+    width: 35%;
+    background: pink;
+    background-size: cover;
+    color: black;
+    margin-top: -610px;
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes slideme {
+    0%{
+        transform: translate(-500px);
+    }
+
+    100%{
+        transform: translate(0px);
+    }
+}
