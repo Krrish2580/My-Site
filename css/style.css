@@ -7,6 +7,8 @@
 body
 {
     background: #C7C7C7;
+    height: 100vh;
+    width: 100%;
 }
 
 a
@@ -23,6 +25,19 @@ div.content
     border-left: #009BDB 9px solid;
     border-right: #009BDB 9px solid;
     box-shadow: -10px 6px 40px 20px rgba(0, 0, 0, 0.2);
+    animation: content-animation 1.5s ease-in-out;
+    overflow: auto;
+}
+
+@keyframes content-animation{
+    0%
+    {
+        transform: translate(0, -700px);
+    }
+    100%
+    {
+        transform: translate(0, 0);
+    }
 }
 
 div.outer-div
@@ -76,6 +91,7 @@ div.inner-div
     border-left: #DDDDDD 0.5px solid;
     border-right: #DDDDDD 0.5px solid;
     box-shadow: 2px 6px 20px 5px rgba(0, 0, 0, 0.1);
+    overflow: auto;
 }
 
 div.profile
@@ -83,6 +99,7 @@ div.profile
     width: 50%;
     height: 560px;
     padding-top: 40px;
+    overflow: auto;
 }
 
 .bg-image
@@ -94,7 +111,7 @@ div.profile
 
 .my-profile
 {
-    height: 300px;
+    height: 310px;
     width: 60%;
     margin: 130px auto 0 auto;
     background-color: #FFFFFF;
@@ -109,6 +126,13 @@ div.profile
     margin: -52px 32.5% 0 32.5%;
     border: white 2px solid;
     border-radius: 50%;
+    transition: transform .2s;
+    background: #000;
+}
+
+.profile-img:hover
+{
+    transform: scale(1.5);
 }
 
 .my-name
@@ -141,8 +165,7 @@ div.profile
 
 .social-menu ul
 {
-    position: absolute;
-    top: 49%;
+    margin: 20px 0 20px 0;
     padding: 0;
     display: flex;
 }
@@ -150,56 +173,54 @@ div.profile
 .social-menu ul li
 {
     list-style: none;
-    line-height: 60px;
+    transition: .6s;
 }
 
 .social-menu ul li .fa
 {
     font-size: 25px;
-    line-height: 60px;
 }
 
 .social-menu ul li a
 {
-    position: relative;
-    display: block;
-    width: 67px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #fff;
     text-align: center;
+    padding: 0 20px 0 20px;
     transition: .6s;
     color: #000000;
 }
 
-.social-menu ul li a:hover
+.social-menu ul li:hover
 {
-    transform: translate(0, -5px);
+    transform: translate(0, -8px);
 }
 
 .social-menu ul li:nth-child(1) a:hover
 {
     color : #3b5999;
+    text-shadow: 5px 5px 3px #000;
 }
 
 .social-menu ul li:nth-child(2) a:hover
 {
     color: #55acee;
+    text-shadow: 5px 5px 3px #000;
 }
 
 .social-menu ul li:nth-child(3) a:hover
 {
     color: #0077B5;
+    text-shadow: 5px 5px 3px #000;
 }
 
 .social-menu ul li:nth-child(4) a:hover
 {
     color: #e4405f;
+    text-shadow: 5px 5px 5px #000;
 }
 
 .card-hr
 {
-    margin: 73px auto 15px auto;
+    margin: 0 auto 20px auto;
     height: 1px;
     width: 93%;
     border-width: 0;
@@ -283,11 +304,25 @@ div.profile
     letter-spacing: 1px;
     margin-left: -3px;
     margin-top: 40px;
+    animation: main-name 2s ease-in-out;
+}
+
+@keyframes main-name
+{
+    0%{
+        transform: translate(-1000px, 0);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
 }
 
 .inner-container
 {
     padding: 40px 45px 0 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-img
@@ -333,6 +368,11 @@ div.profile
 }
 
 .menu ul li a:hover
+{
+    color: #019BDB;
+}
+
+.active
 {
     color: #019BDB;
 }
@@ -391,42 +431,281 @@ div.profile
 
 .sidebar-btn.open .sidebar-btn_burger
 {
-    transform: translateX(50px);
+    transform: translateX(260px);
     background: transparent;
     box-shadow: none;
 }
 .sidebar-btn.open .sidebar-btn_burger::before 
 {
-    transform: rotate(45deg) translate(-35px, 35px);
+    transform: rotate(45deg) translate(-184px, 184px);
 }
 
 .sidebar-btn.open .sidebar-btn_burger::after
 {
-    transform: rotate(-45deg) translate(-35px, -35px);
+    transform: rotate(-45deg) translate(-184px, -184px);
 }
 
 #sidebar
 {
     display: none;
-    animation: slideme .5s; ease;}
+    overflow: auto;
+}
 
 .sidebar-hide-show {
     height: 100vh;
-    width: 35%;
-    background: pink;
+    width: 25%;
+    background: #FAFAFA;
     background-size: cover;
     color: black;
     margin-top: -610px;
     position: absolute;
     z-index: 1;
+    box-shadow: 10px 0 50px 10px rgba(0, 0, 0, 0.6);
+    animation: slideme .5s ease-in-out;
 }
 
 @keyframes slideme {
     0%{
-        transform: translate(-500px);
+        transform: translate(-400px);
     }
 
     100%{
         transform: translate(0px);
     }
+}
+
+.logo
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logo-img
+{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.sidebar-content
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.about-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+h2.sidebar-about
+{
+    font-size: 20px;
+    padding: 5px 10px;
+    margin:0 auto;
+    color: white;
+    background: #0199D8;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    border-radius: 3px;
+}
+
+h2.sidebar-about:before
+{
+    content: '';
+    display: block;
+    min-width: 98%;
+    height: 5px;
+    background: #919191;
+    position: absolute;
+    opacity: 0.8;
+    left: -98%;
+    top: 50%;
+}
+
+h2.sidebar-about:after
+{
+    content: '';
+    display: block;
+    min-width: 86%;
+    height: 5px;
+    background: #919191;
+    position: absolute;
+    opacity: 0.8;
+    right: -86%;
+    top: 50%;
+}
+
+p.sidebar-about-p
+{
+    text-align: center;
+    margin: 15px 4px 0 4px;
+    text-align: justify;
+    font-size: 14px;
+    color: #4A4E52;
+    font-family: Segoe UI;
+    font-weight: 500;
+}
+
+p.sidebar-content-p
+{
+    text-align: center;
+    margin: 15px 4px 0 4px;
+    font-size: 14px;
+    color: #4A4E52;
+    font-family: Segoe UI;
+    font-weight: 500;
+}
+
+h2.sidebar-about-get
+{
+    font-size: 20px;
+    padding: 5px 10px;
+    margin:15px auto;
+    color: white;
+    background: #0199D8;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    border-radius: 3px;
+}
+
+h2.sidebar-about-get:before
+{
+    content: '';
+    display: block;
+    min-width: 98%;
+    height: 5px;
+    background: #919191;
+    position: absolute;
+    opacity: 0.8;
+    left: -98%;
+    top: 50%;
+}
+
+h2.sidebar-about-get:after
+{
+    content: '';
+    display: block;
+    min-width: 55%;
+    height: 5px;
+    background: #919191;
+    position: absolute;
+    opacity: 0.8;
+    right: -55%;
+    top: 50%;
+}
+
+.sidebar-social-menu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sidebar-social-menu ul
+{
+    padding: 0;
+    margin: 30px 0 30px 0;
+    display: flex;
+}
+
+.sidebar-social-menu ul li
+{
+    list-style: none;
+    transition: .6s;
+    border-radius: 50%;
+    margin: 0 20px 0 20px;
+}
+
+.sidebar-social-menu ul li:hover
+{
+    transform: translate(-3px, -5px);
+}
+
+/*.sidebar-social-menu ul li:nth-child(1)
+{
+    background-color: #3b5999;
+}
+
+.sidebar-social-menu ul li:nth-child(2)
+{
+    background-color: #55acee;
+}
+
+.sidebar-social-menu ul li:nth-child(3)
+{
+    background-color: #0077B5;
+}
+
+.sidebar-social-menu ul li:nth-child(4)
+{
+    background-color: #e4405f;
+}*/
+
+.sidebar-social-menu ul li .fa
+{
+    font-size: 25px;
+}
+
+.sidebar-social-menu ul li a
+{
+    position: relative;
+    text-align: center;
+    transition: .6s;
+    color: #000000;
+    color: #FAFAFA;
+}
+
+.sidebar-social-menu ul li:hover a
+{
+    text-shadow: 5px 5px 5px #000;
+    transform: translate(-2px, 2px);
+}
+
+.sidebar-social-menu ul li:nth-child(1) a
+{
+    color : #3b5999;
+}
+
+.sidebar-social-menu ul li:nth-child(2) a
+{
+    color: #55acee;
+}
+
+.sidebar-social-menu ul li:nth-child(3) a
+{
+    color: #0077B5;
+}
+
+.sidebar-social-menu ul li:nth-child(4) a
+{
+    color: #e4405f;
+}
+
+.copyright
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 20px auto;
+}
+
+.cipyright-link
+{
+    font-size: 14px;
+    font-family: Segoe UI;
+    color: #BF1A58;
 }
