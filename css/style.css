@@ -7,7 +7,7 @@
 body
 {
     background: #C7C7C7;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -84,6 +84,7 @@ div.inner-3
 div.inner-div
 {
     display: flex;
+    flex-direction: row;
     width: 99.5%;
     height: 610px;
     background-color: #FFFFFF;
@@ -94,10 +95,21 @@ div.inner-div
     overflow: auto;
 }
 
+div.inner-31
+{
+    display: none;
+}
+
+div.inner-32
+{
+    display: flex;
+    flex-direction: row;
+}
+
 div.profile
 {
     width: 50%;
-    height: 560px;
+    height: 570px;
     padding-top: 40px;
     overflow: auto;
 }
@@ -121,12 +133,12 @@ div.profile
 
 .profile-img
 {
-    height: 34%;
-    width: 35%;
+    height: 105px;
+    width: 100px;
     margin: -52px 32.5% 0 32.5%;
     border: white 2px solid;
     border-radius: 50%;
-    transition: transform .2s;
+    transition: transform .5s;
     background: #000;
 }
 
@@ -287,7 +299,6 @@ div.profile
 {
     height: 40px;
     width: 100%;
-    background-color: #FFFFFF;
     position: sticky;
     top: 0;
 }
