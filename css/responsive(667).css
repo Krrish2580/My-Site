@@ -1,0 +1,129 @@
+
+@media only screen and (max-width:667px)
+{
+
+    .sidebar-btn
+{
+    margin: 10px 0 0 12px;
+}
+    
+    .sidebar-header
+    {
+        height: 15%;
+        width: 100%;
+        background: #FAFAFA;
+        color: white;
+        padding-top: 40px;
+        position: sticky;
+        top: -3%;
+        border-bottom: 2px solid #C7C7C7;
+        display: block;
+    }
+
+    .sidebar-header-menu
+    {
+        width: 100%;
+        display: block;
+    }
+
+    .sidebar-header-menu ul
+    {
+        display: flex;
+        list-style: none;
+        margin-right: 1;
+        float: right;
+    }
+
+    .sidebar-header-menu ul li
+    {
+        padding: 18px 15px 0 15px;
+    }
+
+    .sidebar-header-menu ul li a
+    {
+        color: #6F7275;
+        display: flex;
+        font-family: Segoe UI;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .fa-home, .fa-user, .fa-briefcase, .fa-phone
+    {
+        margin: 3px 0 0 0;
+    }
+
+    .sidebar-header-menu ul li a:hover
+    {
+        color: #019BDB;
+    }
+
+    .active
+    {
+        color: #019BDB;
+    }
+
+    .profile1
+    {
+        display: block;
+        margin-top: 0px;
+    }
+
+    .bg-image
+    {
+        height: 170px;
+        width: 100%;
+        display: flex;
+    }
+
+    .my-profile
+    {
+        height: 355px;
+        width: 65%;
+        margin: 110px auto 0 auto;
+        background-color: #FFFFFF;
+        border-radius: 7px;
+        box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.4);
+    }
+
+    .profile-img
+    {
+        height: 120px;
+        width: 120px;
+        margin: -70px 0 0 27.5%;
+        border: white 2px solid;
+        border-radius: 50%;
+        transition: transform .5s;
+        background: #000;
+    }
+
+    .profile-img:hover
+    {
+        transform: scale(1.15);
+    }
+
+    .responsive-menu
+    {
+        width: 100%;
+        background-color: #F3F3F3;
+        display: block;
+        height: 65px;
+    }
+
+    .responsive-menu ul li a
+    {
+        display: none;
+    }
+
+    div.content
+    {
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        padding-top: 65px;
+        border: none;
+        animation: content-animation 1.5s ease-in-out;
+        overflow: hidden auto;
+    }
+    
+}
