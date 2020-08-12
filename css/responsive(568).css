@@ -1,0 +1,297 @@
+
+/* #### iPhone 5 Portrait or Landscape #### */
+
+@media only screen and (max-width:568px)
+{
+    .sidebar-btn
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 47px;
+    margin: 7px 0 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    /*border: 3px solid #fff; */
+    background: #50ADD3;
+    z-index: 2;
+}
+
+.sidebar-btn_burger
+{
+    width: 30px;
+    height: 3px;
+    background: #555555;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.sidebar-btn_burger::before,
+.sidebar-btn_burger::after
+{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #555555;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.sidebar-btn_burger::before
+{
+    transform: translateY(-9px);
+}
+
+.sidebar-btn_burger::after
+{
+    transform: translateY(9px);
+}
+
+.logo2
+{
+    display: flex;
+    float: right;
+    margin: 16px -100px 20px 0;
+}
+
+.navbar-brand1
+{
+    font-size: 23px;
+    color: black;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -9px;
+    position: relative;
+}
+
+.navbar-brand2
+{
+    font-size: 23px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile1
+{
+    display: none;
+}
+
+.logo
+{
+    display: flex;
+    justify-content: center;
+    margin: -110px 0;
+}
+
+.sidebar-header
+    {
+        background: #FAFAFA;
+        color: white;
+        margin-top: 60px;
+        position: relative;
+        display: block;
+        border: none;
+    }
+
+    .sidebar-header-menu
+    {
+        width: 100%;
+        display: block;
+    }
+
+    .sidebar-header-menu ul
+    {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-top: 40px;
+        margin-right: 34%;
+        text-align: center;
+    }
+
+    .sidebar-header-menu ul li
+    {
+        padding: 16px 0;
+    }
+
+    .sidebar-header-menu ul li a
+    {
+        color: #6F7275;
+        display: flex;
+        font-family: Segoe UI;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .fa-home, .fa-user, .fa-briefcase, .fa-phone
+    {
+        margin: 3px 10px 0 0;
+    }
+
+    .sidebar-header-menu ul li a:hover
+    {
+        color: #019BDB;
+    }
+
+    .active
+    {
+        color: #019BDB;
+    }
+
+/*.sidebar-header
+    {
+        height: 15%;
+        width: 100%;
+        background: #FAFAFA;
+        color: white;
+        padding-top: 40px;
+        position: sticky;
+        top: -3%;
+        border-bottom: 2px solid #C7C7C7;
+        display: block;
+    }
+
+    .sidebar-header-menu
+    {
+        width: 100%;
+        display: block;
+    }
+
+    .sidebar-header-menu ul
+    {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-right: 1;
+        float: right;
+    }
+
+    .sidebar-header-menu ul li
+    {
+        padding: 18px 15px 0 15px;
+    }
+
+    .sidebar-header-menu ul li a
+    {
+        color: #6F7275;
+        display: flex;
+        font-family: Segoe UI;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .fa-home, .fa-user, .fa-briefcase, .fa-phone
+    {
+        margin: 3px 0 0 0;
+    }
+
+    .sidebar-header-menu ul li a:hover
+    {
+        color: #019BDB;
+    }
+
+    .active
+    {
+        color: #019BDB;
+    }*/
+
+    .sidebar-about-get
+    {
+        display: none;
+    }
+
+    .sidebar-content-p
+    {
+        display: none;
+    }
+
+    .sidebar-social-menu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sidebar-social-menu ul
+{
+    padding: 0;
+    margin: -200px 0 30px 0;
+    display: flex;
+}
+
+.sidebar-social-menu ul li
+{
+    list-style: none;
+    transition: .6s;
+    border-radius: 50%;
+    margin: 0 14px 0 14px;
+}
+
+.sidebar-social-menu ul li:hover
+{
+    transform: translate(-3px, -5px);
+}
+
+.sidebar-social-menu ul li .fa
+{
+    font-size: 23px;
+}
+
+.sidebar-social-menu ul li a
+{
+    position: relative;
+    text-align: center;
+    transition: .6s;
+    color: #000000;
+    color: #FAFAFA;
+}
+
+.sidebar-social-menu ul li:hover a
+{
+    text-shadow: 5px 5px 5px #000;
+    transform: translate(-2px, 2px);
+}
+
+.sidebar-social-menu ul li:nth-child(1) a
+{
+    color : #3b5999;
+}
+
+.sidebar-social-menu ul li:nth-child(2) a
+{
+    color: #55acee;
+}
+
+.sidebar-social-menu ul li:nth-child(3) a
+{
+    color: #0077B5;
+}
+
+.sidebar-social-menu ul li:nth-child(4) a
+{
+    color: #e4405f;
+}
+
+.copyright
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -25px auto 30px auto;
+}
+
+.cipyright-link
+{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+}

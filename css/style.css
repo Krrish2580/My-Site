@@ -227,6 +227,11 @@ a
     position: relative;
 }
 
+.logo2
+{
+    display: none;
+}
+
 .sidebar-content
 {
     width: 90%;
@@ -424,9 +429,19 @@ h2.sidebar-about-get:after
 .cipyright-link
 {
     font-size: 14px;
+    font-weight: 400;
     font-family: Segoe UI;
-    color: #C92029;
+    color: rgb(44, 44, 230);
 }
+
+.cipyright-link::after
+    {
+        content: ' | Krishna';
+        font-size: 14px;
+        font-weight: 600;
+        font-family: Segoe UI;
+        color: rgb(44, 44, 230);
+    }
 
 div.content
 {

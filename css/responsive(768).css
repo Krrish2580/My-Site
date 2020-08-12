@@ -295,7 +295,6 @@
     {
         font-size: 16px;
         font-family: Segoe UI;
-        color: #C92029;
     }
 
     .cipyright-link::after
@@ -321,7 +320,7 @@
     @keyframes content-animation{
         0%
         {
-            transform: translate(0, 700px);
+            transform: translate(0, 1150px);
         }
         100%
         {
@@ -391,7 +390,7 @@
   
     .main-name
     {
-        background-color: #0199D8;
+        background-color: rgb(44, 44, 230);
         width: 200px;
         padding: 11px 10px 11px 45px;
         color: #ffffff;

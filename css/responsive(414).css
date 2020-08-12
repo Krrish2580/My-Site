@@ -1,0 +1,67 @@
+
+/* #### iPhone 5 Portrait or Landscape #### */
+
+@media only screen and (max-width:414px)
+{
+
+.logo
+{
+    display: flex;
+    justify-content: center;
+    margin: -130px 0;
+}
+
+.sidebar-header
+    {
+        background: #FAFAFA;
+        color: white;
+        margin-top: 100px;
+        position: relative;
+        display: block;
+        border: none;
+    }
+
+    .sidebar-header-menu ul
+    {
+        margin-right: 30%;
+        margin-top: 10px;
+    }
+
+    .sidebar-header-menu ul li
+    {
+        padding: 18px 0;
+    }
+
+    .sidebar-header-menu ul li a
+    {
+        font-size: 18px;
+    }
+
+.sidebar-social-menu ul
+{
+    margin: 30px 0 30px 0;
+}
+
+.copyright
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 30px auto;
+}
+
+.cipyright-link
+{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo2
+{
+    display: flex;
+    float: right;
+    margin: 15px -120px 20px 0;
+}
+
+
+}

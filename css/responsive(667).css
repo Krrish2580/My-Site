@@ -1,4 +1,6 @@
 
+/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+
 @media only screen and (max-width:667px)
 {
 
@@ -9,7 +11,7 @@
     
     .sidebar-header
     {
-        height: 15%;
+        height: 8%;
         width: 100%;
         background: #FAFAFA;
         color: white;
@@ -62,6 +64,47 @@
     {
         color: #019BDB;
     }
+
+    .logo2
+{
+    display: flex;
+    float: right;
+    margin: 14px -100px 20px 0;
+}
+
+/*.logo-img
+{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}*/
+
+.navbar-brand1
+{
+    font-size: 25px;
+    color: black;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -9px;
+    position: relative;
+}
+
+.navbar-brand2
+{
+    font-size: 25px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand2 span
+{
+    border-radius: 50%;
+    padding: 0px 8px;
+    color: #ffffff;
+    background: rgb(44, 44, 230);
+    position: relative;
+}
 
     .profile1
     {
