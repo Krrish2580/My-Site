@@ -63,5 +63,340 @@
     margin: 15px -120px 20px 0;
 }
 
+/*####################------About-----######################*/
+p.p2
+    {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .personal-info
+  {
+      color: #6F7275;
+      font-family: Segoe UI;
+      margin: 10% 0 0 3%;
+  }
+
+  .i-do1
+  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.6);
+      padding: 4%;
+      margin: 10% 0 5% 0;
+      border-radius: 10px;
+      width: 90%;
+      transform: perspective(0) rotateY(0);
+      transition: .7s all ease;
+  }
+
+  .i-do1 .fa
+  {
+    color: #006400;
+    font-size: 30px;
+    border-radius: 50%;
+    background: pink;
+    padding: 30px;
+  }
+
+  .i-do1 h3 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(44, 44, 230);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 0 0 7%;
+  }
+
+  .i-do1:hover
+  {
+    transform: perspective(0) rotateY(0);   
+  }
+
+  .i-do2
+  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: right;
+      box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.6);
+      padding: 4%;
+      margin: 5% 0 0 0;
+      border-radius: 10px;
+      width: 90%;
+      transform: perspective(0) rotateY(0);
+      transition: .7s all ease;
+  }
+
+  .i-do2 .fa
+  {
+    color: #006400;
+    font-size: 30px;
+    border-radius: 50%;
+    background: pink;
+    padding: 30px;
+  }
+
+  .i-do2 h3 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(44, 44, 230);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 7% 0 0;
+  }
+
+  .i-do2:hover
+  {
+    transform: perspective(0) rotateY(0);   
+  }
+
+  .i-do3
+  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: right;
+      box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.6);
+      padding: 4% 6% 4% 4% ;
+      margin: 5% 0 10% 0;
+      border-radius: 10px;
+      width: 90%;
+      transform: perspective(0) rotateY(0);
+      transition: .7s all ease;
+  }
+
+  .i-do3 .fa
+  {
+    color: #006400;
+    font-size: 30px;
+    border-radius: 50%;
+    background: pink;
+    padding: 30px;
+  }
+
+  .i-do3 h3 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(44, 44, 230);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 7% 0 0;
+  }
+
+  .i-do3:hover
+  {
+    transform: perspective(0) rotateY(0); 
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    width: 90%;
+    margin: 10% 0 15% 0;
+  }
+
+
+
+  /*######------Resume------######*/
+
+  .skill-container
+  {
+      display: none;
+  }
+
+  .skill-container1 .skills1
+{
+    display: block;
+}
+
+.skill-container1 .skills1
+{
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    padding: 18px 10px 10px;
+    background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #00FF43;
+    transition: 0.5s;
+}
+
+.skill-container1:hover .skills1
+{
+    opacity: 0.6;
+}
+
+.skill-container1 .skills1:hover
+{
+    opacity: 1;
+    transform: scale(1.07);
+}
+
+.skill-container1 .skills1::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, .03);
+}
+
+.skill-container1 .skills1 .name
+{
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 110px;
+    text-align: right;
+    color: #F2E1DD;
+    margin-top: -4px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.skill-container1 .skills1:hover .name
+{
+    color: #fff;
+}
+
+.skill-container1 .skills1 .value
+{
+    position: relative;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 40px;
+    text-align: left;
+    color: #F2E1DD;
+    margin-top: -6px;
+    text-transform: uppercase;
+}
+
+.skill-container1 .skills1:hover .value
+{
+    color: #fff;
+}
+
+.skill-container1 .skills1 .percent
+{
+    position: relative;
+    width: calc(100% - 150px);
+    height: 6px;
+    margin: 2px 10px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: inset0 0 10px #000;
+    overflow: hidden;
+}
+
+.skill-container1 .skills1 .percent .progress
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: inset 0 0 2px #000;
+    animation: animate1 4s ease-in-out forwards;
+}
+
+@keyframes animate1
+{
+    from
+    {
+        width: 0;
+    }
+}
+
+.skill-container1 .skills1:nth-child(1) .percent .progress
+{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+
+.skill-container1 .skills1:nth-child(2) .percent .progress
+{
+    background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+
+.skill-container1 .skills1:nth-child(3) .percent .progress
+{
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+
+.hobby-container
+{
+    margin: 0 0 20% 0;
+}
+
+.hobby-container ul
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.hobby-container ul li
+{
+    width: 80px;
+    height: 80px;
+    margin: 7% 0 7% 0;
+    border: 2px solid #006400;
+    border-radius: 50%;
+    position: relative;
+    color: #006400;
+    background: #FFC0CB;
+    transition: 0.5s;
+}
+
+.hobby-container ul li:hover
+{
+    transform: scale(1.1);
+}
+
+.hobby-container ul li i 
+{
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+.hobby-container ul li::after
+{
+    content: '';
+    position: absolute;
+    top: 80px;
+    right: 40px; 
+    width: 2px;
+    height: 52px;
+    background: #006400;
+
+}
+
+.hobby-container ul li:last-child::after
+{
+    display: none;
+}
+
 
 }

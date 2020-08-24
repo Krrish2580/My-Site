@@ -6,8 +6,10 @@
 
 body
 {
-    background: #C7C7C7;
-    background-image: url(https://www.agdelta.com/wp-content/uploads/2018/06/website-parallax-background-C.jpg);
+    background: 	#40E0D0;
+   /* background-image: url(https://www.agdelta.com/wp-content/uploads/2018/06/website-parallax-background-C.jpg);*/
+   background-image: url(parallax.png);
+   background-size: cover;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -29,7 +31,7 @@ a
 .menu
 {
     float: right;
-    margin-top: 16%;
+    margin-top: 15%;
 }
 
 .menu ul
@@ -57,9 +59,9 @@ a
     font-weight: 500;
 }
 
-.fa-home, .fa-user, .fa-briefcase, .fa-phone
+.fa-home, .fa-user, .fa-graduation-cap, .fa-briefcase, .fa-phone
 {
-    padding-right: 5px;
+    padding-right: 8px;
 }
 
 .menu ul li a:hover
@@ -95,8 +97,8 @@ a
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     /*border: 3px solid #fff; */
-    background: #50ADD3;
-    z-index: 2;
+    background: #DAA520;
+    z-index: 200;
 }
 
 .sidebar-btn_burger
@@ -154,6 +156,7 @@ a
 {
     display: none;
     overflow: hidden auto;
+    z-index: 150;
 }
 
 .sidebar-header
@@ -173,7 +176,6 @@ a
     background-size: cover;
     color: black;
     position: absolute;
-    z-index: 1;
     box-shadow: 10px 0 50px 10px rgba(0, 0, 0, 0.6);
     animation: slideme .5s ease-in-out;
 }
@@ -713,7 +715,7 @@ div.profile
       width: 50%;
       height: 100%;
       box-shadow: -3px 0 40px 10px rgba(0, 0, 0, 0.2);
-      overflow: auto;
+      overflow: hidden auto;
   }
   
   

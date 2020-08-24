@@ -9,4 +9,17 @@
         display: none;
     }
 
+    /*####------Resume-----#####*/
+
+    .right-inner
+    {
+        margin: 0 2% 0 2%;
+    }
+
+    .right-inner .exp-wrap ul
+  {
+      width: 100%;
+  }
+
+
 }

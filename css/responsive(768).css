@@ -54,7 +54,7 @@
 
     .responsive-menu ul li
     {
-        padding: 18px 15px;
+        padding: 18px 10px;
     }
 
     .responsive-menu ul li a
@@ -73,12 +73,12 @@
 
     .responsive-menu ul li a:hover
     {
-        color: #019BDB;
+        color: rgb(44, 44, 230);
     }
 
     .active
     {
-        color: #019BDB;
+        color: rgb(44, 44, 230);
     }
 
     #sidebar
@@ -401,4 +401,97 @@
         margin-top: 40px;
         animation: main-name 2s ease-in-out;
     }
+
+    /*############################ABOUT###########################*/
+
+    p.p2
+    {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: justify;
+    }
+
+    .personal-info
+  {
+      color: #6F7275;
+      font-family: Segoe UI;
+      margin: 10% 0 0 15%;
+  }
+
+  .i-do1
+  {
+      width: 50%;
+  }
+
+  .i-do2
+  {
+      width: 50%;
+  }
+
+  .i-do3
+  {
+    width: 50%;
+  }
+
+
+
+  /*#######------_Resume_-------#######*/
+
+  .hobby-container
+{
+    margin: 0 0 20% 0;
+}
+
+.hobby-container ul
+{
+    display: flex;
+    justify-content: space-between;
+    margin: -20px 0 0 0;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.hobby-container ul li
+{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #006400;
+    border-radius: 50%;
+    position: relative;
+    color: #006400;
+    background: #FFC0CB;
+    transition: 0.5s;
+}
+
+.hobby-container ul li:hover
+{
+    transform: scale(0);
+}
+
+.hobby-container ul li i 
+{
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}  
+
+.hobby-container ul li::after
+{
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: -110px; 
+    width: 110px;
+    height: 2px;
+    background: #006400;
+
+}
+
+.hobby-container ul li:last-child::after
+{
+    display: none;
+}
 }

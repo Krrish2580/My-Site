@@ -51,12 +51,12 @@
 
     .responsive-menu ul li a:hover
     {
-        color: #019BDB;
+        color: rgb(44, 44, 230);
     }
 
     .active
     {
-        color: #019BDB;
+        color: rgb(44, 44, 230);
     }
 
     .sidebar-btn

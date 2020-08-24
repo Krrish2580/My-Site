@@ -1,0 +1,603 @@
+
+
+/* Resume only */   
+
+.resume-main-name-bg
+  {
+      height: 40px;
+      width: 100%;
+      background: #FFFFFF;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+  }
+
+.resume-main-name
+  {
+      background-color: rgb(44, 44, 230);
+      width: 115px;
+      padding: 11px 10px 11px 45px;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-left: -3px;
+      margin-top: 40px;
+      animation: main-name 2s ease-in-out;
+  }
+  
+  @keyframes main-name
+  {
+      0%{
+          transform: translate(-1000px, 0);
+      }
+      100%{
+          transform: translate(0, 0);
+      }
+  }
+
+  .title
+  {
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      padding-bottom: 10px;
+      color: #3525af;
+      position: relative;
+      text-align: right;
+      margin: 50px 0 50px 0;
+  }
+  
+  .title::before
+  {
+      content: '';
+      position: absolute;
+      top: 35px;
+      right: 0;
+      width: 50px;
+      height: 3px;
+      background: #DBA221;
+  }
+
+  .right-inner
+  {
+      margin: 5%;
+  }
+
+  .right-inner .exp-wrap ul
+  {
+      width: 85%;
+      margin: 0 auto 0 auto;
+  }
+
+  .right-inner li 
+  {
+      list-style: none;
+  }
+  
+  .right-inner .li-wrap
+  {
+      display: flex;
+      margin-bottom: 20px;
+  
+  }
+  
+  .right-inner .li-wrap .date
+  {
+      width: 70px;
+      color: #006400;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: -3px;
+  }
+  
+  .right-inner .li-wrap .date span
+  {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #6F7275;
+  }
+  
+  .right-inner .li-wrap .info
+  {
+      width: calc(100% - 125px);
+      padding-left: 25px;
+      position: relative ;
+  }
+  
+  .right-inner .li-wrap .info-title
+  {
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #006400;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+  
+  }
+  
+  .right-inner .li-wrap .info-com
+  {
+      margin-top: 3px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: #6F7275;
+  }
+  
+  .right-inner .li-wrap .info-cont
+  {
+      margin-top: 14px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #505457;
+  }
+  
+  .right-inner .li-wrap .info::before
+  {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background: #3525AF;
+      box-shadow: 0px 0px 0 5px yellow;
+      border-radius: 50%;
+  }
+  
+  .right-inner .li-wrap .info::after
+  {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 4px;
+      width: 2px;
+      height: 100%;
+      background: #3525AF;
+  }
+
+  .title1
+  {
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      padding-bottom: 10px;
+      color: #3525af;
+      position: relative;
+      text-align: right;
+      margin: 100px 0 50px 0;
+  }
+
+  .title1::before
+  {
+      content: '';
+      position: absolute;
+      top: 35px;
+      right: 0;
+      width: 50px;
+      height: 3px;
+      background: #DBA221;
+  }
+
+  .title2
+  {
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      padding-bottom: 10px;
+      color: #3525af;
+      position: relative;
+      text-align: left;
+      margin: 100px 0 50px 0;
+  }
+
+  .title2::before
+  {
+      content: '';
+      position: absolute;
+      top: 35px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: #DBA221;
+  }
+
+  .skill-container
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-container .skill-card 
+{
+    position: relative;
+    width: 28%;
+    background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px; 
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.skill-container .skill-card:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.4);
+}
+
+.skill-container .skill-card::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .03);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.skill-percent
+{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 50;
+}
+
+.skill-percent .skill-number
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}           
+
+.skill-percent .skill-number h2
+{
+    color: #777;
+    font-weight: 700;
+    font-size: 20px;
+    transition: 0.5s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 10px 5px 0;
+}
+
+.skill-card:hover .skill-percent .skill-number h2
+{
+    color: #fff;
+    font-size: 30px;
+}
+
+.skill-percent .skill-number h2 span
+{
+    position: absolute;
+    font-size: 17px;
+    color: #777;
+    transition: 0.5s;
+    margin: 5px 0 0 0;
+}
+.skill-card:hover .skill-percent .skill-number h2 span
+{
+    color: #fff;
+}
+
+.skill-text
+{
+    position: absolute;
+    color: #777;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.skill-card:hover .skill-text
+{
+    color: #fff;
+}
+
+.skill-text1
+{
+    position: absolute;
+    color: #777;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    margin-left: 20px;
+}
+
+.skill-card:hover .skill-text1
+{
+    color: #fff;
+}
+
+.skill-text2
+{
+    position: absolute;
+    color: #777;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    margin-left: 30px;
+}
+
+.skill-card:hover .skill-text2
+{
+    color: #fff;
+}
+
+svg
+{
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 6;
+    stroke-linecap: round;
+    transform: translate(3.2px,3.2px) scale(1.05);
+}
+
+svg circle:nth-child(2)
+{
+    stroke-dasharray: 210;
+    stroke-dashoffset: 210;
+}
+
+.skill-card:nth-child(1) svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(210 - (210 * 90) / 100);
+    stroke: #00ff43;
+}
+
+.skill-card:nth-child(2) svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(210 - (210 * 85) / 100);
+    stroke: #00a1ff;
+}
+
+.skill-card:nth-child(3) svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(210 - (210 * 60) / 100);
+    stroke: #ff04f7;
+}
+
+.skill-container1
+{
+    position: relative;
+    width: 100%;
+    margin: 6% 0;
+}
+
+.skill-container1 h2
+{
+    color: #fff;
+}
+
+.skill-container1 .skills
+{
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    padding: 18px 10px 10px;
+    background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #00FF43;
+    transition: 0.5s;
+}
+
+.skill-container1:hover .skills
+{
+    opacity: 0.6;
+}
+
+.skill-container1 .skills:hover
+{
+    opacity: 1;
+    transform: scale(1.07);
+}
+
+.skill-container1 .skills::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, .03);
+}
+
+.skill-container1 .skills .name
+{
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 110px;
+    text-align: right;
+    color: #F2E1DD;
+    margin-top: -4px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.skill-container1 .skills:hover .name
+{
+    color: #fff;
+}
+
+.skill-container1 .skills .value
+{
+    position: relative;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 40px;
+    text-align: left;
+    color: #F2E1DD;
+    margin-top: -6px;
+    text-transform: uppercase;
+}
+
+.skill-container1 .skills:hover .value
+{
+    color: #fff;
+}
+
+.skill-container1 .skills .percent
+{
+    position: relative;
+    width: calc(100% - 150px);
+    height: 6px;
+    margin: 2px 10px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: inset0 0 10px #000;
+    overflow: hidden;
+}
+
+.skill-container1 .skills .percent .progress
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: inset 0 0 2px #000;
+    animation: animate2 4s ease-in-out forwards;
+}
+
+@keyframes animate2
+{
+    from
+    {
+        width: 0;
+    }
+}
+
+.skill-container1 .skills:nth-child(4) .percent .progress
+{
+    background: linear-gradient(45deg, #22ffde, #2196f3);
+}
+
+.skill-container1 .skills:nth-child(5) .percent .progress
+{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+
+.skill-container1 .skills:nth-child(6) .percent .progress
+{
+    background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+
+.skill-container1 .skills:nth-child(7) .percent .progress
+{
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+
+.skill-container1 .skills1
+{
+    display: none;
+}
+
+.hobby-container
+{
+    margin: 0 0 20% 0;
+}
+
+.hobby-container ul
+{
+    display: flex;
+    justify-content: space-between;
+    margin: -20px 0 0 0;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.hobby-container ul li
+{
+    width: 70px;
+    height: 70px;
+    border: 2px solid #006400;
+    border-radius: 50%;
+    position: relative;
+    color: #006400;
+    background: #FFC0CB;
+    transition: 0.5s;
+}
+
+.hobby-container ul li:hover
+{
+    transform: scale(1.1);
+}
+
+.hobby-container ul li i 
+{
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}  
+
+.hobby-container ul li::after
+{
+    content: '';
+    position: absolute;
+    top: 35px;
+    right: -52px; 
+    width: 52px;
+    height: 2px;
+    background: #006400;
+
+}
+
+.hobby-container ul li:last-child::after
+{
+    display: none;
+}

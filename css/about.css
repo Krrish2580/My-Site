@@ -1,0 +1,434 @@
+/* About only */
+
+.about-main-name
+  {
+      background-color: rgb(44, 44, 230);
+      width: 115px;
+      padding: 11px 10px 11px 45px;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-left: -3px;
+      margin-top: 40px;
+      animation: main-name 2s ease-in-out;
+  }
+  
+  @keyframes main-name
+  {
+      0%{
+          transform: translate(-1000px, 0);
+      }
+      100%{
+          transform: translate(0, 0);
+      }
+  }
+
+  .about-inner-container
+  {
+      padding: 40px 20px 0 20px;
+      display: flex;
+      flex-direction: column;
+      
+  }
+
+  .about-back-col
+  {
+      background-color: #0BB5FF;
+      box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.6);
+      border-radius: 5px;
+  }
+
+  .about-me
+  {
+      background-image: url(about-back.jpg);
+      background-size: cover;
+      color: blanchedalmond;
+      font-family: Segoe UI;
+      padding: 20px;
+      border-radius: 5px;      
+  }
+
+  .about-me h2
+  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 1000;
+  }
+
+  .about-me h2 span
+  {
+      color: #DBA320;
+  }
+
+  p.p1
+  {
+    margin: 0px; 
+    color: #a0f669;
+    margin: 5px 0 10px 0;
+  }
+
+  p.p2
+  {
+      line-height: 25px;
+      text-align: justify;
+  }
+
+  .personal
+  {
+      margin: 40px 0 40px 0;
+  }
+
+  .personal h2 span
+  {
+    color: #000;
+  }
+
+  .personal h2
+  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+    margin: 0 6% 0 6%;
+    display: flex;
+    justify-content: center;
+    color: #6F7275
+  }
+
+  .personal-info
+  {
+      color: #6F7275;
+      font-family: Segoe UI;
+      margin: 10% 0 0 6%;
+  }
+
+  .personal-info p span
+  {
+      color: black;
+      font-weight: 750;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 35px;
+      letter-spacing: 1px;
+      padding-right: 30px;
+  }
+
+  .personal-info p span.age
+  {
+      margin-right: 60px;
+  }
+
+  .personal-info p span.nationality
+  {
+      margin-right: 0;
+  }
+
+  .personal-info p span.dob
+  {
+      margin-right: -20px;
+  }
+
+  .personal-info p span.address
+  {
+    margin-right: 22px;
+  }
+
+  .personal-info p span.email
+  {
+    margin-right: 45px;
+  }
+
+  .what-i-do
+  {
+    margin: 5% 0 0 0;
+  }
+
+  .what-i-do h2 
+  {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+    color: #6F7275;
+  }
+
+  .what-i-do h2 span
+  {
+    color: #000;
+  }
+
+  .about-hr
+  {
+    margin: 2% auto;
+    height: 4px;
+    width: 20%;
+    border-width: 0;
+    background-color: #DBA221;
+  }
+
+  .i-do1
+  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+      box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.6);
+      padding: 4%;
+      margin: 10% 0 5% 0;
+      border-radius: 10px;
+      width: 60%;
+      transform: perspective(700px) rotateY(30deg);
+      transition: .7s all ease;
+  }
+
+  .i-do1 .fa
+  {
+    color: #006400;
+    font-size: 30px;
+    border-radius: 50%;
+    background: pink;
+    padding: 30px;
+  }
+
+  .i-do1 h3 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(44, 44, 230);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 0 0 7%;
+  }
+
+  .i-do1:hover
+  {
+    transform: perspective(0) rotateY(0);   
+  }
+
+  .i-do2
+  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: right;
+      box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.6);
+      padding: 4%;
+      margin: 5% 0 0 0;
+      border-radius: 10px;
+      width: 60%;
+      transform: perspective(700px) rotateY(-30deg);
+      transition: .7s all ease;
+  }
+
+  .i-do2 .fa
+  {
+    color: #006400;
+    font-size: 30px;
+    border-radius: 50%;
+    background: pink;
+    padding: 30px;
+  }
+
+  .i-do2 h3 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(44, 44, 230);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 7% 0 0;
+  }
+
+  .i-do2:hover
+  {
+    transform: perspective(0) rotateY(0);   
+  }
+
+  .i-do3
+  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: right;
+      box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.6);
+      padding: 4% 6% 4% 4% ;
+      margin: 5% 0 10% 0;
+      border-radius: 10px;
+      width: 60%;
+      transform: perspective(700px) rotateY(-30deg);
+      transition: .7s all ease;
+  }
+
+  .i-do3 .fa
+  {
+    color: #006400;
+    font-size: 30px;
+    border-radius: 50%;
+    background: pink;
+    padding: 30px;
+  }
+
+  .i-do3 h3 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(44, 44, 230);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 7% 0 0;
+  }
+
+  .i-do3:hover
+  {
+    transform: perspective(0) rotateY(0); 
+  }
+
+  .fun-fact
+  {
+    margin: 10% 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fun-fact h2 
+  {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+    color: #6F7275;
+  }
+
+  .fun-fact h2 span
+  {
+    color: #000;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    width: 100%;
+    margin: 10% 0 15% 0;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.3s all ease;
+  }
+
+  .grid-container > div:hover
+  {
+    transform: scale(1.04);
+  }
+
+  .happy-client
+  {
+    background: url(happy-clients.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .project
+  {
+    background: url(projects.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .award-won
+  {
+    background: url(award-won.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .working-hour
+  {
+    background: url(working-hour.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .fun-icon
+  {
+    color: #DBA320;
+    font-size: 25px;
+  }
+
+  .fun-head
+  {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    margin: 10px auto;
+  }
+
+  .fun-text
+  {
+    color: #DBA320;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+  }
+
+
+
+
+
+
+
+  @media only screen and (max-width:1275px)
+  {
+
+  .i-do1 .fa
+  {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .i-do1 h3 
+  {
+    font-size: 20px;
+  }
+
+  .i-do2 .fa
+  {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .i-do2 h3 
+  {
+    font-size: 20px;
+  }
+
+  .i-do3 .fa
+  {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .i-do3 h3 
+  {
+    font-size: 20px;
+  }
+  }

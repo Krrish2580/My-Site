@@ -17,7 +17,7 @@
     transition: all 0.5s ease-in-out;
     /*border: 3px solid #fff; */
     background: #50ADD3;
-    z-index: 2;
+    z-index: 200;
 }
 
 .sidebar-btn_burger
@@ -136,12 +136,12 @@
 
     .sidebar-header-menu ul li a:hover
     {
-        color: #019BDB;
+        color: rgb(44, 44, 230);
     }
 
     .active
     {
-        color: #019BDB;
+        color: rgb(44, 44, 230);
     }
 
 /*.sidebar-header
