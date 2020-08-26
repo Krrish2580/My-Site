@@ -1,5 +1,11 @@
 @media only screen and (max-width:960px) 
 {
+
+    body
+    {
+        background: 	#ffffff;
+    }
+
     .main-menu
     {
         display: none;
@@ -164,19 +170,8 @@
         margin: auto;
         padding-top: 90px;
         border: none;
-        animation: content-animation 1.5s ease-in-out;
         overflow: hidden auto;
-    }
-
-    @keyframes content-animation{
-        0%
-        {
-            transform: translate(0, 700px);
-        }
-        100%
-        {
-            transform: translate(0, 0);
-        }
+        box-shadow: none;
     }
 
     div.outer-div
@@ -189,18 +184,21 @@
     {
         width: 99.5%;
         height: 100vh;
+        box-shadow: none;
     }
 
     div.inner-2
     {
         width: 99.5%;
         height: 100vh;
+        box-shadow: none;
     }
 
     div.inner-3
     {
         width: 99.5%;
         height: 100vh;
+        box-shadow: none;
     }
 
     div.inner-div
@@ -208,6 +206,7 @@
         width: 99.5%;
         height: 100vh;
         overflow: hidden;
+        box-shadow: none;
     }
 
     div.profile
@@ -256,5 +255,25 @@
         width: 50px;
         margin: 15px 0 30px 0;
     }
+
+    div.container
+  {
+      width: 50%;
+      height: 100%;
+      box-shadow: -3px 0 40px 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden auto;
+      animation: content-animation 1.5s ease-in-out;
+  }
+
+  @keyframes content-animation{
+    0%
+    {
+        transform: translate(0, 700px);
+    }
+    100%
+    {
+        transform: translate(0, 0);
+    }
+}
 
 }

@@ -37,33 +37,31 @@ $('.about-me').mousemove(function(e){
   var moveY = (e.pageY * -1 / 50);
   $(this).css('background-position', moveX + 'px ' + moveY + 'px')
 })
+      
 
-const buttons=document.querySelector("#buttons").children;
-	   const items=document.querySelector(".items").children;
-	   
-	    
-	    for(let i=0; i<buttons.length; i++){
-	    	buttons[i].addEventListener("click",function(){
+      function initMap(){
+        var location = {lat: 27.984344, lng: 83.768530};
+        var map = new google.maps.Map(document.getElementById("map"),{
+          zoom: 4,
+          center: location
+        });
+      }
 
-	    		 for(let j=0; j<buttons.length; j++){
-	    		 	buttons[j].classList.remove("active")
-	    		 }
-	    		 this.classList.add("active")
-	    		 const target=this.getAttribute("data-target");
+const inputs = document.querySelectorAll(".input");
 
-	    		 for(let k=0; k<items.length; k++){
-                   items[k].style.opacity="0.5";
-                   items[k].style.transform="scale(0.8)";
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
 
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
 
-                   if(items[k].getAttribute("data-id")==target){
-                   	items[k].style.opacity="1";
-                   items[k].style.transform="scale(1)";
-                   }
-                   if(target=="all"){
-                   	items[k].style.opacity="1";
-                   items[k].style.transform="scale(1)";
-                   }
-	    		 }
-	    	})
-	    }
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});

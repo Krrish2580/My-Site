@@ -11,7 +11,6 @@
 
     body
     {
-        background: #C7C7C7;
         height: 100%;
         width: 100%;
         position: fixed;
@@ -374,7 +373,7 @@
     {
         width: 100%;
         height: auto;
-        box-shadow: -3px 0 40px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: none;
         overflow: none;
         background-color: #fff;
         margin-top: 0;
