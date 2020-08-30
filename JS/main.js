@@ -21,15 +21,9 @@ function myFunction() {
 
 
   $('body').mousemove(function(e){
-    var moveX = (e.pageX * -1 / 15);
-    var moveY = (e.pageY * -1 / 15);
+    var moveX = (e.pageX * -1 / 50);
+    var moveY = (e.pageY * -1 / 50);
     $(this).css('background-position', moveX + 'px ' + moveY + 'px')
-})
-
-$('.bg-image').mousemove(function(e){
-  var moveX = (e.pageX * -1 / 50);
-  var moveY = (e.pageY * -1 / 50);
-  $(this).css('background-position', moveX + 'px ' + moveY + 'px')
 })
 
 $('.about-me').mousemove(function(e){

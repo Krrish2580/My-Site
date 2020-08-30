@@ -97,7 +97,7 @@ a
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     /*border: 3px solid #fff; */
-    background: #DAA520;
+    background: #2C2CE6;
     z-index: 200;
 }
 
@@ -105,7 +105,7 @@ a
 {
     width: 38px;
     height: 4px;
-    background: #555555;
+    background: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
     transition: all .5s ease-in-out;
@@ -118,7 +118,7 @@ a
     position: absolute;
     width: 38px;
     height: 4px;
-    background: #555555;
+    background: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
     transition: all .5s ease-in-out;
@@ -155,7 +155,7 @@ a
 #sidebar
 {
     display: none;
-    overflow: hidden auto;
+    overflow: auto;
     z-index: 150;
 }
 
@@ -450,7 +450,7 @@ h2.sidebar-about-get:after
 div.content
 {
     width: 74%;
-    height: 610px;
+    height: 98vh;
     background-color: #FFFFFF;
     margin: auto auto auto 10%;
     border-left: rgb(44, 44, 230) 9px solid;
@@ -462,7 +462,7 @@ div.content
 div.outer-div
 {
     width: 100%;
-    height: 610px;
+    height: 98vh;
     background-color: #FFFFFF;
     margin: auto;
 }
@@ -470,7 +470,7 @@ div.outer-div
 div.inner-1
 {
     width: 99.5%;
-    height: 610px;
+    height: 98vh;
     background-color: #FFFFFF;
     margin: auto;
     border-left: #DDDDDD 0.5px solid;
@@ -481,7 +481,7 @@ div.inner-1
 div.inner-2
 {
     width: 99.5%;
-    height: 610px;
+    height: 98vh;
     background-color: #FFFFFF;
     margin: auto;
     border-left: #DDDDDD 0.5px solid;
@@ -492,7 +492,7 @@ div.inner-2
 div.inner-3
 {
     width: 99.5%;
-    height: 610px;
+    height: 98vh;
     background-color: #FFFFFF;
     margin: auto;
     border-left: #DDDDDD 0.5px solid;
@@ -505,7 +505,7 @@ div.inner-div
     display: flex;
     flex-direction: row;
     width: 99.5%;
-    height: 610px;
+    height: 98vh;
     background-color: #FFFFFF;
     margin: auto;
     border-left: #DDDDDD 0.5px solid;
@@ -659,7 +659,7 @@ div.profile
     width: 83%;
 }
 
-.arrow-down
+/*.arrow-down
 {
     display: none;
 }
@@ -696,11 +696,11 @@ div.profile
           opacity: 0;
           transform: translate(50px, 13px);
       }
-  }
+  }*/
 
   div.container
   {
-      width: 50%;
+      width: 60%;
       height: 100%;
       box-shadow: -3px 0 40px 10px rgba(0, 0, 0, 0.2);
       overflow: hidden auto;
@@ -763,6 +763,6 @@ div.profile
   
   .container-img
   {
-      height: 50%;
+      height: 78vh;
       width: 100%;
   }
