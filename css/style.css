@@ -533,7 +533,7 @@ div.profile
     box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.4);
 }
 
-.profile-img
+div.profile-image-cover
 {
     height: 105px;
     width: 100px;
@@ -541,7 +541,16 @@ div.profile
     border: white 2px solid;
     border-radius: 50%;
     transition: transform .5s;
+    overflow: hidden;
+}
+
+.profile-img
+{
+    height: 105px;
+    width: 100px;
+    transition: .5s;
     background: #000;
+    border-radius: 50%;
 }
 
 .profile-img:hover
