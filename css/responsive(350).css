@@ -1,25 +1,17 @@
-
 /* #### iPhone 4 Portrait or Landscape #### */
 
-@media only screen and (max-width:350px)
-{
-
-    .cipyright-link::after
-    {
-        display: none;
-    }
-
-    /*####------Resume-----#####*/
-
-    .right-inner
-    {
-        margin: 0 2% 0 2%;
-    }
-
-    .right-inner .exp-wrap ul
-  {
-      width: 100%;
+@media only screen and (max-width: 350px) {
+  .cipyright-link::after {
+    display: none;
   }
 
+  /*####------Resume-----#####*/
 
+  .right-inner {
+    margin: 0 2% 0 2%;
+  }
+
+  .right-inner .exp-wrap ul {
+    width: 100%;
+  }
 }

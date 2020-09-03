@@ -1,78 +1,68 @@
-
 /* #### iPhone 6 and 6 plus Portrait or Landscape #### */
 
-@media only screen and (max-width:667px)
-{
-
-    .sidebar-btn
-{
+@media only screen and (max-width: 667px) {
+  .sidebar-btn {
     margin: 10px 0 0 12px;
-}
-    
-    .sidebar-header
-    {
-        height: 8%;
-        width: 100%;
-        background: #FAFAFA;
-        color: white;
-        padding-top: 40px;
-        position: sticky;
-        top: -3%;
-        border-bottom: 2px solid #C7C7C7;
-        display: block;
-    }
+  }
 
-    .sidebar-header-menu
-    {
-        width: 100%;
-        display: block;
-    }
+  .sidebar-header {
+    height: 8%;
+    width: 100%;
+    background: #fafafa;
+    color: white;
+    padding-top: 40px;
+    position: sticky;
+    top: -3%;
+    border-bottom: 2px solid #c7c7c7;
+    display: block;
+  }
 
-    .sidebar-header-menu ul
-    {
-        display: flex;
-        list-style: none;
-        margin-right: 1;
-        float: right;
-    }
+  .sidebar-header-menu {
+    width: 100%;
+    display: block;
+  }
 
-    .sidebar-header-menu ul li
-    {
-        padding: 18px 15px 0 10px;
-    }
+  .sidebar-header-menu ul {
+    display: flex;
+    list-style: none;
+    margin-right: 1;
+    float: right;
+  }
 
-    .sidebar-header-menu ul li a
-    {
-        color: #6F7275;
-        display: flex;
-        font-family: Segoe UI;
-        font-size: 14px;
-        font-weight: 500;
-    }
+  .sidebar-header-menu ul li {
+    padding: 18px 15px 0 10px;
+  }
 
-    .fa-home, .fa-user, .fa-briefcase, .fa-phone
-    {
-        margin: 3px 0 0 0;
-    }
+  .sidebar-header-menu ul li a {
+    color: #6f7275;
+    display: flex;
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-weight: 500;
+  }
 
-    .sidebar-header-menu ul li a:hover
-    {
-        color: rgb(44, 44, 230);
-    }
+  .fa-home,
+  .fa-user,
+  .fa-briefcase,
+  .fa-phone {
+    margin: 3px 0 0 0;
+  }
 
-    .active
-    {
-        color: rgb(44, 44, 230);
-    }
+  .sidebar-header-menu ul li a:hover {
+    color: rgb(44, 44, 230);
+  }
 
-    .logo2
-{
+  .active {
+    color: rgb(44, 44, 230);
+  }
+
+  .logo2 {
     display: flex;
     float: right;
     margin: 14px -100px 20px 0;
-}
+  }
 
-/*.logo-img
+  /*.logo-img
 {
     height: 80px;
     width: 80px;
@@ -80,93 +70,83 @@
     border: 2px solid #ffffff;
 }*/
 
-.navbar-brand1
-{
+  .navbar-brand1 {
     font-size: 25px;
     color: black;
     font-weight: 900;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: -9px;
     position: relative;
-}
+  }
 
-.navbar-brand2
-{
+  .navbar-brand2 {
     font-size: 25px;
     font-weight: 900;
     font-family: Arial, Helvetica, sans-serif;
-}
+  }
 
-.navbar-brand2 span
-{
+  .navbar-brand2 span {
     border-radius: 50%;
     padding: 0px 8px;
     color: #ffffff;
     background: rgb(44, 44, 230);
     position: relative;
-}
+  }
 
-    .profile1
-    {
-        display: block;
-        margin-top: 0px;
-    }
+  .profile1 {
+    display: block;
+    margin-top: 0px;
+  }
 
-    .bg-image
-    {
-        height: 170px;
-        width: 100%;
-        display: flex;
-    }
+  .bg-image {
+    height: 170px;
+    width: 100%;
+    display: flex;
+  }
 
-    .my-profile
-    {
-        height: 355px;
-        width: 65%;
-        margin: 110px auto 0 auto;
-        background-color: #FFFFFF;
-        border-radius: 7px;
-        box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.4);
-    }
+  .my-profile {
+    height: 270px;
+    width: 65%;
+    margin: 110px auto 0 auto;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.4);
+  }
 
-    .profile-img
-    {
-        height: 120px;
-        width: 120px;
-        margin: -70px 0 0 27.5%;
-        border: white 2px solid;
-        border-radius: 50%;
-        transition: transform .5s;
-        background: #000;
-    }
+  .profile-img {
+    height: 120px;
+    width: 120px;
+    margin: -70px 0 0 27.5%;
+    border: white 2px solid;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    background: #000;
+  }
 
-    .profile-img:hover
-    {
-        transform: scale(1.15);
-    }
+  .profile-img:hover {
+    transform: scale(1.15);
+  }
 
-    .responsive-menu
-    {
-        width: 100%;
-        background-color: #F3F3F3;
-        display: block;
-        height: 65px;
-    }
+  .responsive-menu {
+    width: 100%;
+    background-color: #f3f3f3;
+    display: block;
+    height: 65px;
+  }
 
-    .responsive-menu ul li a
-    {
-        display: none;
-    }
+  .responsive-menu ul li a {
+    display: none;
+  }
 
-    div.content
-    {
-        width: 100%;
-        height: 100vh;
-        margin: auto;
-        padding-top: 65px;
-        border: none;
-        animation: content-animation 1.5s ease-in-out;
-        overflow: hidden auto;
-    }
-    
+  div.content {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    border: none;
+    animation: content-animation 1.5s ease-in-out;
+  }
+
+  div.inner-div {
+    margin-top: 64px;
+  }
 }

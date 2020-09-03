@@ -1,10 +1,7 @@
-
 /* #### iPhone 5 Portrait or Landscape #### */
 
-@media only screen and (max-width:568px)
-{
-    .sidebar-btn
-{
+@media only screen and (max-width: 568px) {
+  .sidebar-btn {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -16,135 +13,129 @@
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     /*border: 3px solid #fff; */
-    background: #50ADD3;
+    background: #50add3;
     z-index: 200;
-}
+  }
 
-.sidebar-btn_burger
-{
+  .sidebar-btn_burger {
     width: 30px;
     height: 3px;
     background: #555555;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-    transition: all .5s ease-in-out;
-}
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
 
-.sidebar-btn_burger::before,
-.sidebar-btn_burger::after
-{
-    content: '';
+  .sidebar-btn_burger::before,
+  .sidebar-btn_burger::after {
+    content: "";
     position: absolute;
     width: 30px;
     height: 3px;
     background: #555555;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-    transition: all .5s ease-in-out;
-}
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
 
-.sidebar-btn_burger::before
-{
+  .sidebar-btn_burger::before {
     transform: translateY(-9px);
-}
+  }
 
-.sidebar-btn_burger::after
-{
+  .sidebar-btn_burger::after {
     transform: translateY(9px);
-}
+  }
 
-.logo2
-{
+  .logo2 {
     display: flex;
     float: right;
     margin: 16px -100px 20px 0;
-}
+  }
 
-.navbar-brand1
-{
+  .navbar-brand1 {
     font-size: 23px;
     color: black;
     font-weight: 900;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: -9px;
     position: relative;
-}
+  }
 
-.navbar-brand2
-{
+  .navbar-brand2 {
     font-size: 23px;
     font-weight: 900;
     font-family: Arial, Helvetica, sans-serif;
-}
+  }
 
-.profile1
-{
+  .profile1 {
     display: none;
-}
+  }
 
-.logo
-{
+  .logo {
     display: flex;
     justify-content: center;
-    margin: -110px 0;
-}
+    align-items: center;
+    margin: -60px 50%;
+    text-align: center;
+  }
 
-.sidebar-header
-    {
-        background: #FAFAFA;
-        color: white;
-        margin-top: 60px;
-        position: relative;
-        display: block;
-        border: none;
-    }
+  .navbar-brand0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .sidebar-header-menu
-    {
-        width: 100%;
-        display: block;
-    }
+  .sidebar-header {
+    background: #fafafa;
+    color: white;
+    margin-top: 60px;
+    position: relative;
+    display: block;
+    border: none;
+  }
 
-    .sidebar-header-menu ul
-    {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        margin-top: 40px;
-        margin-right: 34%;
-        text-align: center;
-    }
+  .sidebar-header-menu {
+    width: 100%;
+    display: block;
+  }
 
-    .sidebar-header-menu ul li
-    {
-        padding: 16px 0;
-    }
+  .sidebar-header-menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 60px;
+    margin-right: 34%;
+    text-align: center;
+  }
 
-    .sidebar-header-menu ul li a
-    {
-        color: #6F7275;
-        display: flex;
-        font-family: Segoe UI;
-        font-size: 17px;
-        font-weight: 500;
-    }
+  .sidebar-header-menu ul li {
+    padding: 16px 0;
+  }
 
-    .fa-home, .fa-user, .fa-briefcase, .fa-phone
-    {
-        margin: 3px 10px 0 0;
-    }
+  .sidebar-header-menu ul li a {
+    color: #6f7275;
+    display: flex;
+    font-family: Segoe UI;
+    font-size: 17px;
+    font-weight: 500;
+  }
 
-    .sidebar-header-menu ul li a:hover
-    {
-        color: rgb(44, 44, 230);
-    }
+  .fa-home,
+  .fa-user,
+  .fa-briefcase,
+  .fa-phone {
+    margin: 3px 10px 0 0;
+  }
 
-    .active
-    {
-        color: rgb(44, 44, 230);
-    }
+  .sidebar-header-menu ul li a:hover {
+    color: rgb(44, 44, 230);
+  }
 
-/*.sidebar-header
+  .active {
+    color: rgb(44, 44, 230);
+  }
+
+  /*.sidebar-header
     {
         height: 15%;
         width: 100%;
@@ -201,97 +192,79 @@
         color: #019BDB;
     }*/
 
-    .sidebar-about-get
-    {
-        display: none;
-    }
+  .sidebar-about-get {
+    display: none;
+  }
 
-    .sidebar-content-p
-    {
-        display: none;
-    }
+  .sidebar-content-p {
+    display: none;
+  }
 
-    .sidebar-social-menu
-{
+  .sidebar-social-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-
-.sidebar-social-menu ul
-{
+  .sidebar-social-menu ul {
     padding: 0;
     margin: -200px 0 30px 0;
     display: flex;
-}
+  }
 
-.sidebar-social-menu ul li
-{
+  .sidebar-social-menu ul li {
     list-style: none;
-    transition: .6s;
+    transition: 0.6s;
     border-radius: 50%;
     margin: 0 14px 0 14px;
-}
+  }
 
-.sidebar-social-menu ul li:hover
-{
+  .sidebar-social-menu ul li:hover {
     transform: translate(-3px, -5px);
-}
+  }
 
-.sidebar-social-menu ul li .fa
-{
+  .sidebar-social-menu ul li .fa {
     font-size: 23px;
-}
+  }
 
-.sidebar-social-menu ul li a
-{
+  .sidebar-social-menu ul li a {
     position: relative;
     text-align: center;
-    transition: .6s;
+    transition: 0.6s;
     color: #000000;
-    color: #FAFAFA;
-}
+    color: #fafafa;
+  }
 
-.sidebar-social-menu ul li:hover a
-{
+  .sidebar-social-menu ul li:hover a {
     text-shadow: 5px 5px 5px #000;
     transform: translate(-2px, 2px);
-}
+  }
 
-.sidebar-social-menu ul li:nth-child(1) a
-{
-    color : #3b5999;
-}
+  .sidebar-social-menu ul li:nth-child(1) a {
+    color: #3b5999;
+  }
 
-.sidebar-social-menu ul li:nth-child(2) a
-{
+  .sidebar-social-menu ul li:nth-child(2) a {
     color: #55acee;
-}
+  }
 
-.sidebar-social-menu ul li:nth-child(3) a
-{
-    color: #0077B5;
-}
+  .sidebar-social-menu ul li:nth-child(3) a {
+    color: #0077b5;
+  }
 
-.sidebar-social-menu ul li:nth-child(4) a
-{
+  .sidebar-social-menu ul li:nth-child(4) a {
     color: #e4405f;
-}
+  }
 
-.copyright
-{
+  .copyright {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: -25px auto 30px auto;
-}
+  }
 
-.cipyright-link
-{
+  .cipyright-link {
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-
+  }
 }
