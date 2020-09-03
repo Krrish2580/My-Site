@@ -14,4 +14,47 @@
   .right-inner .exp-wrap ul {
     width: 100%;
   }
+
+  .my-profile {
+    height: 275px;
+  }
+
+  div.profile-image-cover {
+    height: 95px;
+    width: 92px;
+    margin: -52px 28% 0 28%;
+  }
+
+  .profile-img {
+    height: 96px;
+    width: 93px;
+    position: relative;
+    margin: -4px -1px;
+    transition: 0.5s;
+    border-radius: 50%;
+  }
+
+  .profile-img:hover {
+    transform: scale(1.2);
+  }
+
+  .my-name {
+    font-size: 16px;
+  }
+
+  .umy-name {
+    font-size: 12px;
+  }
+
+  .social-menu ul li {
+    margin: 0 17px;
+  }
+
+  .social-menu ul li .fa {
+    font-size: 18px;
+  }
+
+  .profile-quote {
+    font-size: 12px;
+  }
 }

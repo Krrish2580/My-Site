@@ -685,4 +685,9 @@ div.container {
 .container-img {
   /* min-height: 0vh; */
   max-width: 82%;
+  display: block;
+}
+
+.profile-card1 {
+  display: none;
 }

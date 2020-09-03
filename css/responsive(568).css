@@ -267,4 +267,159 @@
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  div.inner-div {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: none;
+    margin: 55px 0 0 0;
+  }
+
+  .main-name-bg {
+    display: none;
+  }
+
+  .inner-container {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-img {
+    display: none;
+  }
+
+  .profile-card1 {
+    display: block;
+    height: 87vh;
+    width: 100%;
+  }
+
+  .bg-image {
+    height: 200px;
+    width: 100%;
+  }
+
+  .my-profile {
+    height: 300px;
+    width: 60%;
+    margin: 130px auto 0 auto;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.4);
+  }
+
+  div.profile-image-cover {
+    height: 105px;
+    width: 100px;
+    margin: -52px 32.5% 0 32.5%;
+    border: white 2px solid;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    overflow: hidden;
+  }
+
+  .profile-img {
+    height: 105px;
+    width: 100px;
+    position: relative;
+    margin: -4px -1px;
+    transition: 0.5s;
+    border-radius: 50%;
+  }
+
+  .profile-img:hover {
+    transform: scale(1.2);
+  }
+
+  .my-name {
+    text-align: center;
+    margin: 10px 0 6px 0;
+    color: #4a4e52;
+    font-family: Segoe UI;
+    letter-spacing: 1px;
+    font-weight: 640;
+    font-size: 20px;
+  }
+
+  .umy-name {
+    text-align: center;
+    font-size: 14px;
+    color: #4a4e52;
+    font-family: Segoe UI;
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+
+  .social-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-menu ul {
+    margin: 20px 0 20px 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .social-menu ul li {
+    list-style: none;
+    transition: 0.6s;
+    margin: 0 22px 0 22px;
+  }
+
+  .social-menu ul li .fa {
+    font-size: 25px;
+  }
+
+  .social-menu ul li a {
+    text-align: center;
+    transition: 0.6s;
+    color: #000000;
+  }
+
+  .social-menu ul li:hover {
+    transform: translate(0, -8px);
+  }
+
+  .social-menu ul li:nth-child(1) a:hover {
+    color: #3b5999;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .social-menu ul li:nth-child(2) a:hover {
+    color: #55acee;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .social-menu ul li:nth-child(3) a:hover {
+    color: #0077b5;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .social-menu ul li:nth-child(4) a:hover {
+    color: #e4405f;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .card-hr {
+    margin: 0 auto 20px auto;
+    height: 1px;
+    width: 93%;
+    border-width: 0;
+    background-color: rgb(44, 44, 230);
+  }
+
+  .profile-quote {
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    color: #4a4e52;
+    font-family: Segoe UI;
+    font-weight: 500;
+    width: 83%;
+  }
 }

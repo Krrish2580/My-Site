@@ -51,10 +51,47 @@
     margin: 15px -108px 20px 0;
   }
 
-  .container-img {
-    height: 65vh;
-    width: 100%;
-    margin-top: -20px;
+  .my-profile {
+    height: 275px;
+  }
+
+  div.profile-image-cover {
+    height: 98px;
+    width: 95px;
+    margin: -52px 29% 0 29%;
+  }
+
+  .profile-img {
+    height: 105px;
+    width: 100px;
+    position: relative;
+    margin: -4px -1px;
+    transition: 0.5s;
+    border-radius: 50%;
+  }
+
+  .profile-img:hover {
+    transform: scale(1.2);
+  }
+
+  .my-name {
+    font-size: 18px;
+  }
+
+  .umy-name {
+    font-size: 13px;
+  }
+
+  .social-menu ul li {
+    margin: 0 19px 0 19px;
+  }
+
+  .social-menu ul li .fa {
+    font-size: 20px;
+  }
+
+  .profile-quote {
+    font-size: 13px;
   }
 
   /*####################------About-----######################*/
