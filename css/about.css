@@ -1,5 +1,14 @@
 /* About only */
 
+.about-main-name-bg {
+  height: 40px;
+  width: 100%;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .about-main-name {
   background-color: rgb(44, 44, 230);
   width: 115px;

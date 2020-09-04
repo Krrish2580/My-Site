@@ -291,7 +291,7 @@
     display: none;
   }
 
-  .profile-card1 {
+  div.profile-card1 {
     display: block;
     height: 87vh;
     width: 100%;
